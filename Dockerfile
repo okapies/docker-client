@@ -7,7 +7,7 @@ ENV DOCKER_ARC_URL "https://download.docker.com/linux/static/stable/x86_64"
 ENV DOCKER_VERSION "17.12.0-ce"
 
 RUN cd /tmp \
-  && apk add --no-cache ca-certificates wget \
+  && apk add --no-cache ca-certificates wget git \
   && update-ca-certificates \
   && wget $DOCKER_ARC_URL/docker-$DOCKER_VERSION.tgz \
   && tar xzvf docker-$DOCKER_VERSION.tgz \
