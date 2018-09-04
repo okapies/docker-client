@@ -4,7 +4,7 @@ MAINTAINER Yuta Okamoto <okapies@gmail.com>
 
 ENV HOME /root
 ENV DOCKER_ARC_URL "https://download.docker.com/linux/static/stable/x86_64"
-ENV DOCKER_VERSION "17.12.0-ce"
+ENV DOCKER_VERSION "18.06.1-ce"
 
 RUN cd /tmp \
   && apk add --no-cache ca-certificates wget git \
